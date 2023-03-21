@@ -1,0 +1,17 @@
+Please make notes here to clarify any decisions taken that you wish to communicate, and capture any URLs you used in solving the problems at hand.
+----------------------------------------------------------------------------------------
+Going through the requirements I first divided the whole problem into small tasks and then integerated them all together.
+
+First I went through the code provided and then went over the features that need to be implemented
+Initially starting with the input string I added the validator there and then implemented the function 
+that was mentioned in the document.
+
+After that I went through stats part where I implemented other functions and checked if they are working properly or not. I started from the basic approach to code and then after when it worked perfectly I  started thinking how I can improve it so I created one function named as maxOccuringItem so that I could write the code once instead of repeating the code. 
+
+For longeststring and longestpalindrome I was initially thinking to store each and every value in list but that would just increase the space. Therefore I used only one variable for each that compares and stores the result every time 
+we input a string
+
+I then went through palindrome function that was from developers choice.
+
+Then finally I checked the exit part of code and then merged my all together and then checked if it was working perfectly or not.
+

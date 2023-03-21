@@ -1,0 +1,46 @@
+### Developer's Choice
+
+If you have extra time, you can add a feature or make other changes to improve the application.  Implement one new feature idea or change that makes the code better.
+
+Some things you might consider:
+
+* Are there any input/output validations that might be helpful?
+Yes I have added some validations like  
+1.) When we are adding a empty string it will display a message to add valid string
+2.) When we are accessing stats without having any string record in it,then it will display a message
+3.) Output of the Palidrome is only shown in stats if there exists a palindrome string
+-----------------------------------------------------------------------------------------------------------
+
+* Would the application benefit from unit or functional tests?
+Yes,testing is really important as it helps to identify bugs early in the development process, 
+before they become more difficult and expensive to fix
+we can use pytest to perform unit and functional testing
+
+-----------------------------------------------------------------------------------------------------------
+
+* Are there other interesting string manipulations or stats to implement? Longest palindrome? Anagram finder? Is a given string a dictionary word? The possibilities are virtually endless!
+Yes,For now I have implemented the longest palindrome and displayed that in stats
+
+-----------------------------------------------------------------------------------------------------------
+
+* Could any caching be added to reduce computation for a given input string?
+Yes keeping this in mind I have implemented this by taking only one variable as longeststring and longestpalindrome that compares and stores the result every time 
+we input a string instead of having all the strings stored in list and then perform calculations.
+
+-----------------------------------------------------------------------------------------------------------
+
+* Could the code be refactored for better maintainability, understandability, extensibilty, etc?
+Yes I have refactored the code to the best of my knowledge. For eg I have made a function maxOccuringItem that has been used twice instead of 
+writing the same code again and again.
+
+-----------------------------------------------------------------------------------------------------------
+
+* Could statistics be optionally stored outside of the app so that they can persist across application restarts?
+Yes we can store in databases and perform queries based on that.
+for eg.
+
+#To count the freq for different strings
+select inputstring,count(value) from datastore group by inputstring
+
+#To show the max freq string
+select inputstring,max(value) from datastore group by inputstring order by max(value) desc limit 1
